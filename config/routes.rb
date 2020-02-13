@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   # My Portfolio
   get 'my_portfolio', to: 'users#my_portfolio'
   get 'search_stock', to: 'stocks#search'
+  # User stocks
+  resources :user_stocks
 end
